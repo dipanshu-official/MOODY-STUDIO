@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+.txt-color{
+    color: 
+    #323334;
+}
+
+.bed-img {
+    background-image: url('../src/assets/Bedimage/Rectangle13.png');
+    background-size: cover;
+    background-position: center;
+  }
