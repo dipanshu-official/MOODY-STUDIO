@@ -10,7 +10,7 @@ const Footer = () => {
         <div className='bg-[#323334]'>
 
             {/* Footer grid layout with 4 columns */}
-            <div className='grid grid-cols-4 justify-center pt-12 pl-18 gap-30 pr-40 pb-17 text-white'>
+            <div className='grid  md:grid-cols-4 lg:grid-cols-2 grid-cols-1 justify-center pt-12 pl-18 gap-30 pr-40 pb-17 text-white'>
                 
                 {/* Company information section */}
                 <div>

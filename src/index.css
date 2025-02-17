@@ -10,3 +10,13 @@
     background-size: cover;
     background-position: center;
   }
+
+  body {
+    font-family: "Roboto" !important;
+  }
+
+  @media (max-width: 768px) {
+    .arrow {
+        display: none;
+    }
+}

@@ -254,3 +254,4 @@ const BedRoomProducts = () => {
 }
 
 export default BedRoomProducts
+

@@ -14,7 +14,7 @@ import image7 from '../../assets/Card/Rectangle7.png';
 // Custom Arrow Components
 const NextArrow = ({ onClick }) => (
     <div 
-        className="absolute right-[-40px] top-1/2 transform -translate-y-1/2 z-10 cursor-pointer  text-[#323334] p-3  shadow-lg hover:text-2xl transition"
+        className="arrow absolute right-[-40px] top-1/2 transform -translate-y-1/2 z-10 cursor-pointer text-[#323334] p-3 shadow-lg hover:text-2xl transition"
         onClick={onClick}
     >
         <ChevronRight size={30} />
@@ -23,7 +23,7 @@ const NextArrow = ({ onClick }) => (
 
 const PrevArrow = ({ onClick }) => (
     <div 
-        className="absolute left-[-40px] top-1/2 transform -translate-y-1/2 z-10 cursor-pointer  text-[#323334] p-3  shadow-lg hover:text-2xl transition"
+        className="arrow absolute left-[-40px] top-1/2 transform -translate-y-1/2 z-10 cursor-pointer text-[#323334] p-3 shadow-lg hover:text-2xl transition"
         onClick={onClick}
     >
         <ChevronLeft size={30} />
@@ -54,7 +54,7 @@ const SliderCard = () => {
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 2, // Show 2 cards on tablets
+                    slidesToShow: 1, // Show 2 cards on tablets
                 }
             },
             {
@@ -88,3 +88,7 @@ const SliderCard = () => {
 };
 
 export default SliderCard;
+
+// CSS for hiding arrows on mobile
+// Add this in your global CSS file or in a <style> block in your component.
+

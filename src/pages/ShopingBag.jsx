@@ -1,11 +1,20 @@
 import React from 'react'
+import { useState } from 'react'
 import Header from '../components/header/Header'
 import SliderCard from '../components/Card/SliderCard'
 import Footer from '../components/Footer/Footer'
 import img1 from '../assets/ShopingBag/Rectangle 83.png'
 import img2 from '../assets/ShopingBag/Rectangle 96.png'
+import heart from '../assets/ShopingBag/Vector.png'
+
 
 const ShopingBag = () => {
+
+    const [selectedNumber, setSelectedNumber] = useState(null);
+    const [isOpen, setIsOpen] = useState(false);
+  
+    const numbers = [1, 2, 3, 4, 5];
+  
     return (
         <div>
 
@@ -29,20 +38,39 @@ const ShopingBag = () => {
                                         <img src={img1} alt="" />
                                     </div>
                                     <div>
-                                        <h1 className='font-medium text-[16px] txt-color'>Checked Duvet Cover Set</h1>
-                                        <p className='font-medium text-[16px] txt-color mt-2'>39.99 $</p>
-                                    </div>
-                                </div>
-                                <div className='flex gap-4 mt-10' >
 
-                                    <div>
-                                        <img src={img2} alt="" />
+                                        <div className='mb-5'>
+                                            <h1 className='font-medium text-[16px] txt-color'>Checked Duvet Cover Set</h1>
+                                            <p className='font-medium text-[16px] txt-color mt-2'>39.99 $</p>
+                                        </div>
+
+                                        <div className='flex gap-10 ' >
+                                            <div>
+                                                <p className='font-light txt-color text-[14px]'>Art. No.: <span className='font-light txt-color text-[14px] ml-4'>54637253  </span></p>
+                                            </div>
+                                            <div>
+                                                <p className='font-light txt-color text-[14px]'>Size: <span className='font-light txt-color text-[14px] ml-4'>21*45</span> </p>
+                                            </div>
+                                        </div>
+                                        <div className='flex gap-10 ' >
+                                            <div>
+                                                <p className='font-light txt-color text-[14px]'>Color: <span className='font-light txt-color text-[14px] ml-4'>54637253  </span></p>
+                                            </div>
+                                            <div>
+                                                <p className='font-light txt-color text-[14px]'>Mint: <span className='font-light txt-color text-[14px] ml-4'>39.99*45</span> </p>
+                                            </div>
+                                        </div>
+
+                                        <div className='mt-4'>
+                                            <img src={heart} alt="" className='p-2 border border-[#323334]' />
+                                            <div>
+                                                
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div>
-                                        <h1 className='font-medium text-[16px] txt-color'>Checked Duvet Cover Set</h1>
-                                        <p className='font-medium text-[16px] txt-color mt-2'>39.99 $</p>
-                                    </div>
+
                                 </div>
+
                             </div>
 
                             <div>
