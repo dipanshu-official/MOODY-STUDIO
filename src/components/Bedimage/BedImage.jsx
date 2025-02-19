@@ -1,8 +1,10 @@
 import React from 'react';
 import Button from '../Button.jsx';
 
+
 const BedImage = () => {
-  return (
+
+  return (      
     <div className="bed-img bg-cover bg-center h-[510px] mt-24 flex items-center justify-center px-4">
       <div className='bg-[#FFFFFFE5] p-6 md:p-10 max-w-lg w-full text-center md:text-left'>
         <div className='txt-color'>
@@ -18,7 +20,7 @@ const BedImage = () => {
           </p>
         </div>
         <div className='mt-4 flex justify-center md:justify-start'>
-          <Button className='primary border text-xs'>VIEW DETAILS</Button>
+          <Button  className='primary border text-xs'>VIEW DETAILS</Button>
         </div>
       </div>
     </div>

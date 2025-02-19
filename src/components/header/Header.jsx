@@ -11,7 +11,7 @@ const Header = () => {
     return (
         <div className='pt-6 px-6 md:px-[72px]'>
             <div className='flex justify-between items-center'>
-                <h1 className='text-2xl font-bold txt-color'>MOODY STUDIO</h1>
+                <h1 className='lg:text-2xl md:text-xl text-lg lg:font-bold md:font-medium  txt-color'>MOODY STUDIO</h1>
 
                 <div className='flex md:items-center items-end  gap-9'>
                     <img src={img1} alt="" className='hidden md:block' />
@@ -20,11 +20,11 @@ const Header = () => {
                     <img src={img4} alt="" className='hidden md:block' />
 
                     {/* Hamburger Icon */}
-                    <div className='md:hidden'>
+                    <div className='lg:hidden'>
                         {isOpen ? (
-                            <X size={30} className='cursor-pointer' onClick={() => setIsOpen(false)} />
+                            <X size={30} className='cursor-pointer txt-color' onClick={() => setIsOpen(false)} />
                         ) : (
-                            <Menu size={30} className='cursor-pointer' onClick={() => setIsOpen(true)} />
+                            <Menu size={30} className='cursor-pointer txt-color' onClick={() => setIsOpen(true)} />
                         )}
                     </div>
                 </div>

@@ -41,10 +41,10 @@ const SliderCard = () => {
     ];
 
     const settings = {
-        dots: false,
+        dots: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 4, // Show only 4 cards per row
+        slidesToShow: 4, // Show only 4 cards per row   
         slidesToScroll: 1,
         autoplay: false, // Disable autoplay
         arrows: true, // Enable arrows
